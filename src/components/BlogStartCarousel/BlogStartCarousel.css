@@ -1,0 +1,17 @@
+.box_carousel {
+  border-radius: 30px !important;
+}
+.typography_title {
+  font-family: "Signika Negative", sans-serif !important;
+  font-weight: 700 !important;
+}
+.button_filter {
+  margin-top: 10px !important;
+}
+.button_filter:hover {
+  background-color: black !important;
+  color: white !important;
+}
+.second_typography {
+  width: 80% !important;
+}
