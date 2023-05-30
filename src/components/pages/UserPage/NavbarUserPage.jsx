@@ -14,16 +14,11 @@ import { useNavigate } from "react-router-dom";
 import "./Theme.jsx";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles } from "./Theme";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Badge from "@mui/material/Badge";
-import { useCart } from "../../contexts/CartContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
-import { getCountProductsInCart } from "../../helpers/consts";
 
 export default function NavbarUserPage() {
   const [count, setCount] = React.useState(0);
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const { addProductToCard } = useCart();
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -39,9 +34,7 @@ export default function NavbarUserPage() {
       checkAuth();
     }
   }, []);
-  React.useEffect(() => {
-    setCount(getCountProductsInCart());
-  }, [addProductToCard]);
+
   const label = { inputProps: { "aria-label": "Color switch demo" } };
 
   const [theme, setTheme] = React.useState("light");
@@ -107,21 +100,9 @@ export default function NavbarUserPage() {
             >
               Приведи друга
             </Button>
-            <IconButton
-              className="badge_icon_button"
-              sx={{ marginRight: "10px" }}
-            >
-              <Badge badgeContent={count} color="warning">
-                <ShoppingCartIcon
-                  sx={{ color: "black" }}
-                  onClick={() => navigate("/cart")}
-                />
-              </Badge>
-            </IconButton>
 
             <div>
               <IconButton
-                // size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"

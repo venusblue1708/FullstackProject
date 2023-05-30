@@ -7,7 +7,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./CourseCard.css";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../../contexts/CartContextProvider";
 
 <style>
   @import
@@ -16,7 +15,6 @@ import { useCart } from "../../contexts/CartContextProvider";
 
 export default function CourseCard({ item }) {
   const navigate = useNavigate();
-  const { addProductToCard } = useCart();
   return (
     <Box
       sx={{
@@ -92,10 +90,6 @@ export default function CourseCard({ item }) {
                     color: "white",
                   }}
                   className="button"
-                  onClick={() => {
-                    addProductToCard(item);
-                    navigate("/cart");
-                  }}
                 >
                   Записаться
                 </Button>

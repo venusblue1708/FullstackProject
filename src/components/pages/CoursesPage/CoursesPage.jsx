@@ -46,7 +46,7 @@ const CoursesPage = () => {
             sx={{ display: "flex", flexDirection: "column", marginTop: "10%" }}
           >
             <img src={img} width={150} style={{ marginLeft: "55px" }} />
-            <Button onClick={() => navigate("/register")} className="reg_btn">
+            <Button onClick={() => navigate("/register")} id="reg_btn">
               Зарегистрироваться
             </Button>
           </Box>
