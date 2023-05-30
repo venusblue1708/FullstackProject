@@ -135,12 +135,6 @@ function Navbar() {
                       label="Company"
                       onChange={handleChange}
                     >
-                      <MenuItem
-                        onClick={() => navigate("/addmentors")}
-                        value={1}
-                      >
-                        ментора
-                      </MenuItem>
                       <MenuItem onClick={() => navigate("/admin")} value={2}>
                         курс
                       </MenuItem>
@@ -172,9 +166,7 @@ function Navbar() {
                       <MenuItem onClick={() => navigate("/aboutus")} value={1}>
                         О нас
                       </MenuItem>
-                      <MenuItem onClick={() => navigate("/mentors")} value={2}>
-                        Наши ментора
-                      </MenuItem>
+
                       <MenuItem onClick={() => navigate("/reviews")} value={3}>
                         Отзывы
                       </MenuItem>
