@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../components/pages/HomePage/HomePage";
 import AboutUs from "../components/AboutUs/AboutUs";
-import SaleForFriends from "../components/pages/HomePage/SaleForFriends/SaleForFriends";
 import Sale from "../components/pages/SalesPage/Sale";
 import CommunitySkillbox from "../components/pages/CommunitySkillboxPage/CommunitySkillbox";
 import UserPage from "../components/pages/UserPage/UserPage";
@@ -11,6 +10,8 @@ import Register from "../components/Auth/Register/Register";
 import Active from "../components/Auth/Active";
 import ForgotPassword from "../components/Auth/ForgotPassword/ForgotPassword";
 import PasswordChange from "../components/Auth/PasswordChange/PasswordChange";
+import CoursesPlayList from "../components/courses/CoursesPlayList/CoursesPlayList";
+import SaleForFriends from "../components/pages/SaleForFriends/SaleForFriends";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -26,6 +27,7 @@ const MainRoutes = () => {
     { link: "/active", element: <Active />, id: 16 },
     { link: "/password", element: <ForgotPassword />, id: 17 },
     { link: "/password_reset", element: <PasswordChange />, id: 18 },
+    { link: "/playlist", element: <CoursesPlayList />, id: 12 },
   ];
   return (
     <>
