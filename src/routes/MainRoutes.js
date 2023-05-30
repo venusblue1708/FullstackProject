@@ -12,6 +12,8 @@ import ForgotPassword from "../components/Auth/ForgotPassword/ForgotPassword";
 import PasswordChange from "../components/Auth/PasswordChange/PasswordChange";
 import CoursesPlayList from "../components/courses/CoursesPlayList/CoursesPlayList";
 import SaleForFriends from "../components/pages/SaleForFriends/SaleForFriends";
+import CoursesPage from "../components/pages/CoursesPage/CoursesPage";
+import AdminPage from "../components/pages/AdminPage/AdminPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -28,11 +30,16 @@ const MainRoutes = () => {
     { link: "/password", element: <ForgotPassword />, id: 17 },
     { link: "/password_reset", element: <PasswordChange />, id: 18 },
     { link: "/playlist", element: <CoursesPlayList />, id: 12 },
+    { link: "/courses", element: <CoursesPage />, id: 13 },
   ];
+  const PRIVATE_ROUTES = [{ link: "/admin", element: <AdminPage />, id: 23 }];
   return (
     <>
       <Routes>
         {PUBLIC_ROUTES.map((item) => (
+          <Route path={item.link} element={item.element} key={item.id} />
+        ))}
+        {PRIVATE_ROUTES.map((item) => (
           <Route path={item.link} element={item.element} key={item.id} />
         ))}
       </Routes>

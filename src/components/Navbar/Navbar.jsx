@@ -19,6 +19,12 @@ const settings = [
   { name: "Войти", link: "/register", id: 2 },
 ];
 function Navbar() {
+  const { checkAuth, user } = useAuth();
+  React.useEffect(() => {
+    if (localStorage.getItem("tokens")) {
+      checkAuth();
+    }
+  }, []);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate = useNavigate();
@@ -114,32 +120,38 @@ function Navbar() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <FormControl
-                    className="nav_btn"
-                    sx={{
-                      width: "160px",
-                      height: "55px",
-                      border: "1px solid black",
-                      marginRight: "3%",
-                      marginTop: "5px",
-                      borderRadius: "3px",
-                    }}
-                  >
-                    <InputLabel id="demo-simple-select-label">
-                      Добавить
-                    </InputLabel>
-                    <Select
-                      labelId="demo-simple-select-label"
-                      id="demo-simple-select"
-                      value={company}
-                      label="Company"
-                      onChange={handleChange}
+                  {user == "karaevacholpon08@gmail.com" ||
+                  user == "ajgerimsadirova907@gmail.com" ||
+                  user == "jazmirau@gmail.com" ||
+                  user == "123@gmail.com" ||
+                  user == "zhanbalaevaalima888@gmail.com" ? (
+                    <FormControl
+                      className="nav_btn"
+                      sx={{
+                        width: "160px",
+                        height: "55px",
+                        border: "1px solid black",
+                        marginRight: "3%",
+                        marginTop: "5px",
+                        borderRadius: "3px",
+                      }}
                     >
-                      <MenuItem onClick={() => navigate("/admin")} value={1}>
-                        курс
-                      </MenuItem>
-                    </Select>
-                  </FormControl>
+                      <InputLabel id="demo-simple-select-label">
+                        Добавить
+                      </InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={company}
+                        label="Company"
+                        onChange={handleChange}
+                      >
+                        <MenuItem onClick={() => navigate("/admin")} value={1}>
+                          курс
+                        </MenuItem>
+                      </Select>
+                    </FormControl>
+                  ) : null}
                 </MenuItem>
                 <MenuItem>
                   <FormControl
@@ -241,30 +253,38 @@ function Navbar() {
               Skillbox
             </Typography>
             <Box id="dropdown" sx={{ width: "100%" }}>
-              <FormControl
-                className="nav_btn"
-                sx={{
-                  width: "160px",
-                  height: "55px",
-                  border: "1px solid black",
-                  marginRight: "3%",
-                  marginTop: "5px",
-                  borderRadius: "3px",
-                }}
-              >
-                <InputLabel id="demo-simple-select-label">Добавить</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={company}
-                  label="Company"
-                  onChange={handleChange}
+              {user == "karaevacholpon08@gmail.com" ||
+              user == "ajgerimsadirova907@gmail.com" ||
+              user == "jazmirau@gmail.com" ||
+              user == "123@gmail.com" ||
+              user == "zhanbalaevaalima888@gmail.com" ? (
+                <FormControl
+                  className="nav_btn"
+                  sx={{
+                    width: "160px",
+                    height: "55px",
+                    border: "1px solid black",
+                    marginRight: "3%",
+                    marginTop: "5px",
+                    borderRadius: "3px",
+                  }}
                 >
-                  <MenuItem onClick={() => navigate("/admin")} value={1}>
-                    курс
-                  </MenuItem>
-                </Select>
-              </FormControl>
+                  <InputLabel id="demo-simple-select-label">
+                    Добавить
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={company}
+                    label="Company"
+                    onChange={handleChange}
+                  >
+                    <MenuItem onClick={() => navigate("/admin")} value={1}>
+                      курс
+                    </MenuItem>
+                  </Select>
+                </FormControl>
+              ) : null}
 
               <FormControl
                 className="nav_btn"
