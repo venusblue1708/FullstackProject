@@ -13,6 +13,7 @@ import { FormControl, InputLabel, Select } from "@mui/material";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useAuth } from "../contexts/AuthContextProvider";
 
 const settings = [
   { name: "Мой профиль", link: "/user", id: 1 },
