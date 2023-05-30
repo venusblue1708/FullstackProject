@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
 import SideBar from "../../courses/SideBar";
-import { Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/joy";
 import CourseList from "../../courses/CourseList/CourseList";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import img from "./img/free-icon-font-id-card-clip-alt-9856425.svg";
+import "./CoursesPage.css";
+import { useNavigate } from "react-router-dom";
 
 const CoursesPage = () => {
   const { user, checkAuth } = useAuth();
+  const navigate = useNavigate();
   useEffect(() => {
     if (localStorage.getItem("tokens")) {
       checkAuth();
@@ -37,13 +40,16 @@ const CoursesPage = () => {
               fontFamily: "fantasy",
             }}
           >
-            Для того чтобы посмотреть наши курсы, нужно авторизация
+            Для того чтобы посмотреть наши курсы, нужно авторизоваться
           </Typography>
-          <img
-            src={img}
-            width={200}
-            style={{ marginTop: "10%", marginLeft: "55px" }}
-          />
+          <Box
+            sx={{ display: "flex", flexDirection: "column", marginTop: "10%" }}
+          >
+            <img src={img} width={150} style={{ marginLeft: "55px" }} />
+            <Button onClick={() => navigate("/register")} className="reg_btn">
+              Зарегистрироваться
+            </Button>
+          </Box>
         </Box>
       )}
     </>
