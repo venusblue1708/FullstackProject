@@ -135,7 +135,7 @@ function Navbar() {
                       label="Company"
                       onChange={handleChange}
                     >
-                      <MenuItem onClick={() => navigate("/admin")} value={2}>
+                      <MenuItem onClick={() => navigate("/admin")} value={1}>
                         курс
                       </MenuItem>
                     </Select>
@@ -167,20 +167,20 @@ function Navbar() {
                         О нас
                       </MenuItem>
 
-                      <MenuItem onClick={() => navigate("/reviews")} value={3}>
+                      <MenuItem onClick={() => navigate("/reviews")} value={2}>
                         Отзывы
                       </MenuItem>
 
                       <MenuItem
                         onClick={() => navigate("/saleForFriends")}
-                        value={7}
+                        value={3}
                       >
                         Скидки для друзей
                       </MenuItem>
 
                       <MenuItem
                         onClick={() => navigate("/community")}
-                        value={9}
+                        value={4}
                       >
                         Сообщество Skillbox
                       </MenuItem>
@@ -200,7 +200,7 @@ function Navbar() {
                     }}
                   >
                     <InputLabel id="demo-simple-select-label">
-                      Вебинары
+                      Плейлисты
                     </InputLabel>
                     <Select
                       labelId="demo-simple-select-label"
@@ -209,11 +209,9 @@ function Navbar() {
                       label="Company"
                       onChange={handleChange}
                     >
-                      <MenuItem value={1}>Все вебинары</MenuItem>
-                      <MenuItem onClick={() => navigate("/playlist")} value={2}>
+                      <MenuItem onClick={() => navigate("/playlist")} value={1}>
                         Плейлисты
                       </MenuItem>
-                      <MenuItem value={3}>Расписание</MenuItem>
                     </Select>
                   </FormControl>
                 </MenuItem>
@@ -262,10 +260,7 @@ function Navbar() {
                   label="Company"
                   onChange={handleChange}
                 >
-                  <MenuItem onClick={() => navigate("/addmentors")} value={1}>
-                    ментора
-                  </MenuItem>
-                  <MenuItem onClick={() => navigate("/admin")} value={2}>
+                  <MenuItem onClick={() => navigate("/admin")} value={1}>
                     курс
                   </MenuItem>
                 </Select>
@@ -295,21 +290,19 @@ function Navbar() {
                   <MenuItem onClick={() => navigate("/aboutus")} value={1}>
                     О нас
                   </MenuItem>
-                  <MenuItem onClick={() => navigate("/mentors")} value={2}>
-                    Наши ментора
-                  </MenuItem>
-                  <MenuItem onClick={() => navigate("/review")} value={3}>
+
+                  <MenuItem onClick={() => navigate("/review")} value={2}>
                     Отзывы
                   </MenuItem>
 
                   <MenuItem
                     onClick={() => navigate("/saleForFriends")}
-                    value={7}
+                    value={3}
                   >
                     Скидки для друзей
                   </MenuItem>
 
-                  <MenuItem onClick={() => navigate("/community")} value={9}>
+                  <MenuItem onClick={() => navigate("/community")} value={4}>
                     Сообщество Skillbox
                   </MenuItem>
                 </Select>
@@ -325,7 +318,7 @@ function Navbar() {
                   borderRadius: "3px",
                 }}
               >
-                <InputLabel id="demo-simple-select-label">Вебинары</InputLabel>
+                <InputLabel id="demo-simple-select-label">Плейлисты</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
@@ -333,11 +326,9 @@ function Navbar() {
                   label="Company"
                   onChange={handleChange}
                 >
-                  <MenuItem value={1}>Все вебинары</MenuItem>
-                  <MenuItem onClick={() => navigate("/playlist")} value={2}>
+                  <MenuItem onClick={() => navigate("/playlist")} value={1}>
                     Плейлисты
                   </MenuItem>
-                  <MenuItem value={3}>Расписание</MenuItem>
                 </Select>
               </FormControl>
 

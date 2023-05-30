@@ -1,0 +1,9 @@
+.iconLog {
+  border-radius: 40px;
+}
+.paragraph {
+  font-size: 18px;
+}
+.home_user_page_button:hover {
+  background-color: grey !important;
+}

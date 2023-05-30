@@ -5,6 +5,12 @@ import AboutUs from "../components/AboutUs/AboutUs";
 import SaleForFriends from "../components/pages/HomePage/SaleForFriends/SaleForFriends";
 import Sale from "../components/pages/SalesPage/Sale";
 import CommunitySkillbox from "../components/pages/CommunitySkillboxPage/CommunitySkillbox";
+import UserPage from "../components/pages/UserPage/UserPage";
+import Login from "../components/Auth/Login/Login";
+import Register from "../components/Auth/Register/Register";
+import Active from "../components/Auth/Active";
+import ForgotPassword from "../components/Auth/ForgotPassword/ForgotPassword";
+import PasswordChange from "../components/Auth/PasswordChange/PasswordChange";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -14,6 +20,12 @@ const MainRoutes = () => {
     { link: "/sale", element: <Sale />, id: 5 },
     { link: "/community", element: <CommunitySkillbox />, id: 9 },
     { link: "/saleForFriends", element: <SaleForFriends />, id: 10 },
+    { link: "/user", element: <UserPage />, id: 11 },
+    { link: "/login", element: <Login />, id: 14 },
+    { link: "/register", element: <Register />, id: 15 },
+    { link: "/active", element: <Active />, id: 16 },
+    { link: "/password", element: <ForgotPassword />, id: 17 },
+    { link: "/password_reset", element: <PasswordChange />, id: 18 },
   ];
   return (
     <>
