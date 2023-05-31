@@ -3,7 +3,7 @@ import Loader from "../Loader/Loader";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { Box, Button, FormLabel, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-// import { signInWithPopup } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 import google from "./img/google_short_icon.png";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
@@ -12,9 +12,9 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { IconButton } from "@mui/joy";
-import { auth, provider } from "../../../fire";
 import "../Register/Register.css";
-// import { signInWithPopup } from "@firebase/auth";
+import { auth, provider } from "../../../fire";
+
 const Register = () => {
   const { handleRegister, loading, error, setError } = useAuth();
   const [firstName, setFirstName] = useState("");
@@ -53,12 +53,12 @@ const Register = () => {
     return <Loader />;
   }
 
-  // const handleClick = () => {
-  //   signInWithPopup(auth, provider).then((data) => {
-  //     setValue(data.user.email);
-  //     localStorage.setItem("email", data.user.email);
-  //   });
-  // };
+  const handleClick = () => {
+    signInWithPopup(auth, provider).then((data) => {
+      setValue(data.user.email);
+      localStorage.setItem("email", data.user.email);
+    });
+  };
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -174,15 +174,6 @@ const Register = () => {
               label="Password-confirm"
             />
           </FormControl>
-          {/* <TextField
-            onChange={(e) => setPasswordConfirm(e.target.value)}
-            type="password"
-            id="outlined-basic"
-            label="Password-confirmation"
-            variant="outlined"
-            fullWidth
-            sx={{ margin: "5px" }}
-          /> */}
         </FormLabel>
         <Button
           className="register_button"
@@ -204,7 +195,7 @@ const Register = () => {
 
         <Box>
           <Button
-            // onClick={handleClick}
+            onClick={handleClick}
             sx={{
               border: "2px solid grey",
               width: "25vw",

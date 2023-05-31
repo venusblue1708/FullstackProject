@@ -35,3 +35,18 @@
   font-size: 18px;
   margin: 13px;
 }
+@media all and (max-width: 1024px) {
+  .ordering_img {
+    width: 280px;
+    height: 200px;
+    margin-left: 70px;
+  }
+  .ordering_card {
+    width: 800px;
+  }
+}
+@media all and (max-width: 425px) {
+  .inp_control {
+    margin-left: 70px;
+  }
+}

@@ -16,3 +16,31 @@
   height: 80%;
   margin-left: 7%;
 }
+@media all and (max-width: 1210px) {
+  .sale_header {
+    margin-left: 5% !important;
+  }
+  .sale_content {
+    margin-left: 5% !important;
+  }
+}
+@media all and (max-width: 1000px) {
+  .sale_header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30% !important;
+    font-size: 40px !important;
+  }
+  .sale_content {
+    margin-left: 5% !important;
+  }
+  .sale_img {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    margin-top: 30% !important;
+    margin-left: 3 0% !important;
+    width: 350px;
+  }
+}

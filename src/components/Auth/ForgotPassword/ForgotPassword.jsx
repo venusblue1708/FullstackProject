@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { Box, Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { Typography } from "@mui/joy";
 
 const ForgotPassword = () => {
   const { handlePassword } = useAuth();

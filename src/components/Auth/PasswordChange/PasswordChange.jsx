@@ -9,6 +9,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { IconButton } from "@mui/joy";
 import { useNavigate } from "react-router-dom";
+
 const PasswordChange = () => {
   const { handleChangePassword } = useAuth();
   const [passwordResetCode, setPasswordResetCode] = useState();

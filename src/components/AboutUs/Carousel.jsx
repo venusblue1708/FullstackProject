@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./AboutUs.css";
-
 import { Parallax, Pagination, Navigation } from "swiper";
 
 export default function Carousel() {

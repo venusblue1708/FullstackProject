@@ -67,6 +67,7 @@ function Navbar() {
         </button>
       </div>
       <AppBar
+        className="appBar"
         position="static"
         sx={{
           height: "80px",

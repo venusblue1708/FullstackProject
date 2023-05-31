@@ -72,3 +72,183 @@
   font-size: 20px;
   margin-bottom: 6%;
 }
+@media all and (max-width: 900px) {
+  .img-skill-box > img {
+    width: 100%;
+    height: 480px;
+  }
+
+  .skill-third-box > h1 {
+    font-size: 30px;
+  }
+
+  .skill-third-box > p {
+    font-size: 20px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 37px;
+  }
+}
+
+@media all and (max-width: 988px) {
+  .img-skill-box > img {
+    width: 100%;
+    height: 435px;
+  }
+
+  .skill-li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .skill-third-box > h1 {
+    font-size: 26px;
+  }
+
+  .skill-third-box > p {
+    font-size: 15px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .img-skill-box > img {
+    width: 100%;
+    height: 305px;
+  }
+
+  .skill-li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .skill-third-box > h1 {
+    font-size: 23px;
+  }
+
+  .skill-third-box > p {
+    font-size: 12px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .img-skill-box > img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .skill-li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .skill-third-box > h1 {
+    font-size: 23px;
+  }
+
+  .skill-third-box > p {
+    font-size: 12px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 30px;
+  }
+
+  .skill-second-box > p {
+    font-size: 14px;
+  }
+
+  .skill-second-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tiny-icon-things {
+    display: flex;
+    padding-left: 10%;
+    font-size: 11px;
+  }
+
+  .skill-li > li {
+    font-size: 15px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 23px;
+  }
+
+  .skill-end-box > h2 {
+    font-size: 25px;
+  }
+
+  .skill-end-box > p {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .img-skill-box > img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .skill-li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .skill-third-box > h1 {
+    font-size: 16px;
+  }
+
+  .skill-third-box > p {
+    font-size: 9px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 30px;
+  }
+
+  .skill-second-box > p {
+    font-size: 20px;
+  }
+
+  .tiny-icon-things {
+    display: flex;
+    padding-left: 10%;
+    font-size: 13px;
+  }
+
+  .skill-li > li {
+    font-size: 15px;
+  }
+
+  .card-skill-box > h2 {
+    font-size: 23px;
+  }
+
+  .skill-end-box > h2 {
+    font-size: 25px;
+  }
+
+  .skill-end-box > p {
+    font-size: 16px;
+  }
+
+  .tiny-icon-things > img {
+    width: 20px;
+    height: 20px;
+  }
+}

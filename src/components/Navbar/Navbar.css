@@ -56,3 +56,205 @@
 .btn_admin:hover {
   cursor: pointer;
 }
+@media all and (max-width: 1443px) {
+  .header_sale {
+    width: 103%;
+  }
+  .appBar {
+    width: 103% !important;
+  }
+}
+@media all and (max-width: 1393px) {
+  .header_sale {
+    width: 107%;
+  }
+  .appBar {
+    width: 107% !important;
+  }
+}
+@media all and (max-width: 1323px) {
+  .header_sale {
+    width: 111%;
+  }
+  .appBar {
+    width: 111% !important;
+  }
+}
+@media all and (max-width: 1272px) {
+  .header_sale {
+    width: 115%;
+  }
+  .appBar {
+    width: 115% !important;
+  }
+}
+@media all and (max-width: 1165px) {
+  #dropdown {
+    width: 80% !important;
+  }
+  .sale-header {
+    font-size: 25px !important;
+  }
+}
+@media all and (max-width: 1025px) {
+  .header_sale {
+    width: 118%;
+  }
+  .appBar {
+    width: 118% !important;
+  }
+}
+@media all and (max-width: 900px) {
+  .nav_logo {
+    font-size: 35px !important;
+    margin-right: 30% !important;
+  }
+  #demo-simple-select {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  .header_btn {
+    margin-right: 10% !important;
+  }
+  .header_sale > h2 {
+    font-size: 16px !important;
+    width: 100%;
+  }
+}
+@media all and (max-width: 872px) {
+  .nav_logo {
+    font-size: 25px !important;
+  }
+  #demo-simple-select {
+    display: flex;
+  }
+  .header_sale > h2 {
+    font-size: 16px !important;
+    width: 100%;
+  }
+  .saleSmallImg {
+    width: 150px;
+  }
+}
+@media all and (max-width: 658px) {
+  .header_sale > h2 {
+    font-size: 16px !important;
+    width: 100%;
+  }
+}
+@media all and (max-width: 675px) {
+  #dropdown {
+    width: 60% !important;
+    margin-left: 11% !important;
+    font-size: 20px !important;
+    display: none;
+  }
+  .nav_logo {
+    font-size: 22px !important;
+  }
+}
+@media all and (max-width: 644px) {
+  .sale-header {
+    font-size: 18px !important;
+  }
+}
+@media all and (max-width: 510px) {
+  .header_sale {
+    width: 123%;
+  }
+  .appBar {
+    width: 123% !important;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .header_sale {
+    width: 129%;
+  }
+  .appBar {
+    width: 129% !important;
+  }
+}
+
+@media all and (max-width: 456px) {
+  .saleSmallImg {
+    margin-right: 1%;
+    margin-top: 5px;
+    width: 100px;
+    height: 60px;
+  }
+  .header_btn {
+    width: 110px;
+    height: 40px;
+  }
+  .header_sale > h2 {
+    font-size: 16px !important;
+    width: 80%;
+  }
+  .header_sale {
+    width: 137%;
+  }
+  .appBar {
+    width: 137% !important;
+  }
+}
+@media all and (max-width: 426px) {
+  .header_sale {
+    width: 146%;
+  }
+  .appBar {
+    width: 146% !important;
+  }
+}
+@media all and (max-width: 389px) {
+  .header_sale {
+    width: 161%;
+  }
+  .appBar {
+    width: 161% !important;
+  }
+}
+@media all and (max-width: 364px) {
+  .header_sale {
+    width: 169%;
+  }
+  .appBar {
+    width: 169% !important;
+  }
+}
+@media all and (max-width: 352px) {
+  .nav_logo {
+    font-size: 17px !important;
+    font-weight: bold !important;
+  }
+  .header_sale {
+    width: 176%;
+  }
+  .appBar {
+    width: 176% !important;
+  }
+}
+@media all and (max-width: 330px) {
+  .header_sale {
+    width: 186%;
+  }
+  .appBar {
+    width: 186% !important;
+  }
+}
+@media all and (max-width: 306px) {
+  .header_sale {
+    width: 201%;
+  }
+  .appBar {
+    width: 201% !important;
+  }
+}
+@media all and (max-width: 280px) {
+  .header_sale {
+    width: 216%;
+  }
+  .appBar {
+    width: 216% !important;
+  }
+}

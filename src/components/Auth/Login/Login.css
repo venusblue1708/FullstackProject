@@ -2,3 +2,47 @@
   background-color: black !important;
   color: white !important;
 }
+@media all and (max-width: 1024px) {
+  .login_form {
+    width: 38vw !important;
+    height: 43vw !important;
+  }
+  .login_image {
+    width: 45vw !important;
+  }
+  .image {
+    width: 500px !important;
+  }
+  .register {
+    width: 28vw !important;
+    font-size: 11px !important;
+  }
+  .login_button {
+    width: 28vw !important ;
+    font-size: 13px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .login_form {
+    width: 38vw !important;
+    height: 58vw !important;
+  }
+  .login_image {
+    display: none !important;
+  }
+  .image {
+    width: 500px !important;
+  }
+  .register {
+    width: 38vw !important;
+    font-size: 10px !important;
+  }
+  .login_button {
+    width: 29vw !important ;
+    font-size: 12px !important;
+  }
+  .login_typo {
+    font-size: 20px !important;
+  }
+}

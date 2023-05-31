@@ -7,3 +7,159 @@
 .home_user_page_button:hover {
   background-color: grey !important;
 }
+@media all and (max-width: 768px) {
+  .first_para {
+    font-size: 14px !important;
+  }
+  .second_para {
+    font-size: 11px !important;
+  }
+}
+@media all and (max-width: 425px) {
+  .first_para {
+    font-size: 11px !important;
+    width: 180% !important;
+  }
+  .second_para {
+    font-size: 8px !important;
+    width: 150% !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  .user_page_img_block {
+    margin-left: 20px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .image_home_page {
+    display: none !important;
+  }
+  .user_page_img_block {
+    margin-left: 25px !important;
+  }
+  .h1_text {
+    font-size: 25px !important;
+  }
+  .paragraph {
+    font-size: 16px !important;
+  }
+  .home_user_page_button {
+    width: 30% !important;
+    height: 20% !important;
+    font-size: 12px !important;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .image_home_page {
+    display: none !important;
+  }
+  .user_page_img_block {
+    margin-left: 90px !important;
+  }
+  .h1_text {
+    font-size: 20px !important;
+  }
+  .paragraph {
+    font-size: 13px !important;
+  }
+  .home_user_page_button {
+    width: 20% !important;
+    height: 20% !important;
+    font-size: 9px !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  .toolbar {
+    width: 95% !important;
+  }
+  .typo_skill {
+    font-size: 27px !important;
+  }
+  .button_typa {
+    font-size: 9.8px !important;
+  }
+  .appbar_user_page {
+    margin-left: 61px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .toolbar {
+    width: 100% !important;
+  }
+  .appbar_user_page {
+    margin-left: 23px !important;
+  }
+  .typo_skill {
+    font-size: 27px !important;
+  }
+  .button_typa {
+    font-size: 9.8px !important;
+  }
+  .menu_bar {
+    width: 30% !important;
+  }
+  .iconLog {
+    width: 30px !important;
+  }
+  .menu {
+    font-size: 14px !important;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .toolbar {
+    width: 130% !important;
+  }
+  .appbar_user_page {
+    margin-left: 38px !important;
+    border: none !important;
+  }
+  .typo_skill {
+    font-size: 24px !important;
+  }
+  .button_typa {
+    font-size: 9px !important;
+  }
+  .menu_bar {
+    width: 30% !important;
+  }
+  .iconLog {
+    width: 28px !important;
+  }
+  .menu {
+    font-size: 14px !important;
+  }
+  .badge_icon_button {
+    width: 28px !important;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .toolbar {
+    width: 143% !important;
+  }
+  .appbar_user_page {
+    margin-left: 45px !important;
+  }
+  .typo_skill {
+    font-size: 22px !important;
+  }
+  .button_typa {
+    font-size: 9px !important;
+  }
+  .menu_bar {
+    width: 30% !important;
+  }
+  .iconLog {
+    width: 28px !important;
+  }
+  .menu {
+    font-size: 14px !important;
+  }
+  .badge_icon_button {
+    width: 28px !important;
+  }
+}

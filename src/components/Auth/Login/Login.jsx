@@ -27,7 +27,6 @@ const Login = () => {
 
       handleLogin(formData, email);
     }
-    console.log("hello");
   };
   const navigate = useNavigate();
   useEffect(() => {
