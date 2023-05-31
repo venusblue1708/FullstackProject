@@ -7,6 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./CourseCard.css";
 import { useNavigate } from "react-router-dom";
+import { useCourses } from "../../contexts/CoursesContextProvider";
+import { useAuth } from "../../contexts/AuthContextProvider";
 
 <style>
   @import
@@ -15,6 +17,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function CourseCard({ item }) {
   const navigate = useNavigate();
+  const { deleteCourse } = useCourses();
+  const { user } = useAuth();
+
   return (
     <Box
       sx={{
@@ -102,24 +107,34 @@ export default function CourseCard({ item }) {
                   </Button>
                 </Box>
                 <Box>
-                  <Button
-                    sx={{
-                      backgroundColor: "blue",
-                      color: "white",
-                    }}
-                    className="button"
-                  >
-                    Delete
-                  </Button>
-                  <Button
-                    sx={{
-                      backgroundColor: "blue",
-                      color: "white",
-                    }}
-                    className="button"
-                  >
-                    Edit
-                  </Button>
+                  {user === "karaevacholpon08@gmail.com" ||
+                  user === "ajgerimsadirova907@gmail.com" ||
+                  user === "jazmirau@gmail.com" ||
+                  user === "123@gmail.com" ||
+                  user === "zhanbalaevaalima888@gmail.com" ? (
+                    <Box>
+                      <Button
+                        sx={{
+                          backgroundColor: "blue",
+                          color: "white",
+                        }}
+                        className="button"
+                        onClick={() => deleteCourse(item.id)}
+                      >
+                        Delete
+                      </Button>
+                      <Button
+                        sx={{
+                          backgroundColor: "blue",
+                          color: "white",
+                        }}
+                        className="button"
+                        onClick={() => navigate(`/edit/${item.id}`)}
+                      >
+                        Edit
+                      </Button>
+                    </Box>
+                  ) : null}
                 </Box>
               </CardActions>
             </CardContent>
