@@ -10,6 +10,7 @@ import "../BlogStartCarousel/BlogStartCarousel.css";
 // import { useCourses } from "../contexts/CoursesContextProvider";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useCourses } from "../contexts/CoursesContextProvider";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600&display=swap');
@@ -74,21 +75,17 @@ const imagesCarousel = [
 ];
 
 function BlogStartCarousel() {
-  //   const { categories, getCategories } = useCourses();
+  const { categories, getCategories } = useCourses();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxStep = imagesCarousel.length;
   const navigate = useNavigate();
-  //   React.useEffect(() => {
-  //     getCategories();
-  //   }, []);
+  React.useEffect(() => {
+    getCategories();
+  }, []);
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
-
-  //   React.useEffect(() => {
-  //     getCategories();
-  //   }, []);
   return (
     <Box>
       <Box
@@ -139,7 +136,7 @@ function BlogStartCarousel() {
             }}
             className="box_button"
           >
-            {/* {categories.map((item) => (
+            {categories.map((item) => (
               <Button
                 className="button_filter"
                 sx={{
@@ -153,7 +150,7 @@ function BlogStartCarousel() {
               >
                 {item.name}
               </Button>
-            ))} */}
+            ))}
           </Box>
         </Box>
         <Box sx={{ flexGrow: 1, marginTop: "50px" }}></Box>

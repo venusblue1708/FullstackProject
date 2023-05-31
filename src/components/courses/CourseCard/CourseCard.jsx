@@ -9,6 +9,7 @@ import "./CourseCard.css";
 import { useNavigate } from "react-router-dom";
 import { useCourses } from "../../contexts/CoursesContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
+import { useReviews } from "../../contexts/ReviewsContextProvider";
 
 <style>
   @import
@@ -19,6 +20,7 @@ export default function CourseCard({ item }) {
   const navigate = useNavigate();
   const { deleteCourse } = useCourses();
   const { user } = useAuth();
+  const { setCourseId } = useReviews();
 
   return (
     <Box
@@ -93,6 +95,10 @@ export default function CourseCard({ item }) {
                       color: "white",
                     }}
                     className="button"
+                    onClick={() => {
+                      setCourseId(item.id);
+                      navigate("/add-review");
+                    }}
                   >
                     Оставить отзыв
                   </Button>

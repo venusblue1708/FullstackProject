@@ -17,7 +17,7 @@ import { useAuth } from "../contexts/AuthContextProvider";
 
 const settings = [
   { name: "Мой профиль", link: "/user", id: 1 },
-  { name: "Войти", link: "/register", id: 2 },
+  { name: "Войти", link: "/login", id: 2 },
 ];
 function Navbar() {
   const { checkAuth, user } = useAuth();
@@ -72,7 +72,6 @@ function Navbar() {
           height: "80px",
           justifyContent: "space-between",
           backgroundColor: "white",
-          // marginTop: "5%",
         }}
       >
         <Container

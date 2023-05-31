@@ -15,6 +15,8 @@ import SaleForFriends from "../components/pages/SaleForFriends/SaleForFriends";
 import CoursesPage from "../components/pages/CoursesPage/CoursesPage";
 import AdminPage from "../components/pages/AdminPage/AdminPage";
 import EditCourse from "../components/courses/EditCourse/EditCourse";
+import AddReview from "../components/AddReview/AddReview";
+import Reviews from "../components/Reviews/Reviews";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -33,6 +35,8 @@ const MainRoutes = () => {
     { link: "/playlist", element: <CoursesPlayList />, id: 12 },
     { link: "/courses", element: <CoursesPage />, id: 13 },
     { link: "/edit/:id", element: <EditCourse />, id: 19 },
+    { link: "/review", element: <Reviews />, id: 4 },
+    { link: "/add-review", element: <AddReview />, id: 24 },
   ];
   const PRIVATE_ROUTES = [{ link: "/admin", element: <AdminPage />, id: 23 }];
   return (

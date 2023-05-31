@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-// import ReviewCard from "./ReviewCard";
+import ReviewsCard from "./ReviewsCard";
 
 const Reviews = () => {
   const [setSwiperRef] = useState(null);
@@ -30,7 +30,9 @@ const Reviews = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>{/* <ReviewCard /> */}</SwiperSlide>
+        <SwiperSlide>
+          <ReviewsCard />
+        </SwiperSlide>
       </Swiper>
     </>
   );
