@@ -32,7 +32,12 @@ const CourseList = () => {
   return (
     <Box>
       <Typography
-        sx={{ display: "flex", alignItems: "flex-start", marginLeft: "20%" }}
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          marginLeft: "20%",
+          marginTop: "20px",
+        }}
         variant="h3"
         component="div"
         className="prov"
@@ -44,6 +49,7 @@ const CourseList = () => {
           display: "flex",
           justifyContent: "space-evenly",
           flexWrap: "wrap",
+          width: "100%",
         }}
       >
         {courses.map((item) => (

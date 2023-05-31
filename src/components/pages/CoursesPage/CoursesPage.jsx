@@ -19,7 +19,7 @@ const CoursesPage = () => {
   return (
     <>
       {user ? (
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", width: "100%" }}>
           <Grid sx={{ display: "flex" }}>
             <Grid item md={3}>
               <SideBar />

@@ -19,9 +19,8 @@ export default function CourseCard({ item }) {
     <Box
       sx={{
         display: "flex",
-        justifyContent: "space-evenly",
         flexWrap: "wrap",
-        width: "80%",
+        width: "50%",
       }}
     >
       <Box
@@ -33,7 +32,7 @@ export default function CourseCard({ item }) {
       >
         <Card
           sx={{
-            marginTop: "20px",
+            margin: "40px",
             borderRadius: "25px",
             display: "flex",
             justifyContent: "center",
@@ -74,26 +73,34 @@ export default function CourseCard({ item }) {
                   {item.duration_months} месяца обучения
                 </Typography>
               </Box>
-              <CardActions sx={{ marginTop: "10px" }}>
-                <Button
-                  sx={{
-                    backgroundColor: "blue",
-                    color: "white",
-                  }}
-                  className="button"
-                >
-                  Оставить отзыв
-                </Button>
-                <Button
-                  sx={{
-                    backgroundColor: "blue",
-                    color: "white",
-                  }}
-                  className="button"
-                >
-                  Записаться
-                </Button>
-
+              <CardActions
+                sx={{
+                  marginTop: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                }}
+              >
+                <Box>
+                  <Button
+                    sx={{
+                      backgroundColor: "blue",
+                      color: "white",
+                    }}
+                    className="button"
+                  >
+                    Оставить отзыв
+                  </Button>
+                  <Button
+                    sx={{
+                      backgroundColor: "blue",
+                      color: "white",
+                    }}
+                    className="button"
+                  >
+                    Записаться
+                  </Button>
+                </Box>
                 <Box>
                   <Button
                     sx={{
