@@ -10,7 +10,7 @@ Google login is done using Firebase.
 
 ### Worked with React , Axios, React-Router-Dom, Material UI, Firebase.
 
-# To run this app:
+# To run this app: 
 1. Clone this repository
 2. Install all necessary dependencies via ```npm i```
 3. Start the app via ```npm start```
