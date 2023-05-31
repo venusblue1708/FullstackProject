@@ -108,6 +108,7 @@ export default function CourseCard({ item }) {
                       color: "white",
                     }}
                     className="button"
+                    onClick={() => navigate("/ordering")}
                   >
                     Записаться
                   </Button>

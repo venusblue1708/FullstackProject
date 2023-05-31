@@ -17,28 +17,29 @@ import AdminPage from "../components/pages/AdminPage/AdminPage";
 import EditCourse from "../components/courses/EditCourse/EditCourse";
 import AddReview from "../components/AddReview/AddReview";
 import Reviews from "../components/Reviews/Reviews";
+import Ordering from "../components/Ordering/Ordering";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     { link: "/", element: <HomePage />, id: 1 },
     { link: "/aboutus", element: <AboutUs />, id: 2 },
-    // { link: "/review", element: <Reviews />, id: 4 },
-    { link: "/sale", element: <Sale />, id: 5 },
-    { link: "/community", element: <CommunitySkillbox />, id: 9 },
-    { link: "/saleForFriends", element: <SaleForFriends />, id: 10 },
-    { link: "/user", element: <UserPage />, id: 11 },
-    { link: "/login", element: <Login />, id: 14 },
-    { link: "/register", element: <Register />, id: 15 },
-    { link: "/active", element: <Active />, id: 16 },
-    { link: "/password", element: <ForgotPassword />, id: 17 },
-    { link: "/password_reset", element: <PasswordChange />, id: 18 },
+    { link: "/sale", element: <Sale />, id: 3 },
+    { link: "/community", element: <CommunitySkillbox />, id: 4 },
+    { link: "/saleForFriends", element: <SaleForFriends />, id: 5 },
+    { link: "/user", element: <UserPage />, id: 6 },
+    { link: "/login", element: <Login />, id: 7 },
+    { link: "/register", element: <Register />, id: 8 },
+    { link: "/active", element: <Active />, id: 9 },
+    { link: "/password", element: <ForgotPassword />, id: 10 },
+    { link: "/password_reset", element: <PasswordChange />, id: 11 },
     { link: "/playlist", element: <CoursesPlayList />, id: 12 },
     { link: "/courses", element: <CoursesPage />, id: 13 },
-    { link: "/edit/:id", element: <EditCourse />, id: 19 },
-    { link: "/review", element: <Reviews />, id: 4 },
-    { link: "/add-review", element: <AddReview />, id: 24 },
+    { link: "/edit/:id", element: <EditCourse />, id: 14 },
+    { link: "/review", element: <Reviews />, id: 15 },
+    { link: "/add-review", element: <AddReview />, id: 16 },
+    { link: "/ordering", element: <Ordering />, id: 17 },
   ];
-  const PRIVATE_ROUTES = [{ link: "/admin", element: <AdminPage />, id: 23 }];
+  const PRIVATE_ROUTES = [{ link: "/admin", element: <AdminPage />, id: 18 }];
   return (
     <>
       <Routes>

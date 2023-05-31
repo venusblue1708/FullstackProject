@@ -1,0 +1,37 @@
+.ordering_title {
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 35px !important;
+}
+.ordering_text {
+  color: red !;
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.ordering_price {
+  margin-top: 70px !important;
+  font-size: 32px !important;
+  font-family: "Montserrat, san-serif" !important;
+  font-weight: 700 !important;
+}
+.count {
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  font-size: 29px;
+}
+.ordering_inp {
+  border: none;
+  background-color: #f2f2f2;
+  height: 60px;
+  width: 250px;
+}
+.inp_span {
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px;
+  margin: 13px;
+}

@@ -38,6 +38,7 @@ const EditCourse = () => {
       setCover(oneCourse.cover);
       setMentors(oneCourse.mentors.id);
       setLanguage(oneCourse.language.id);
+      console.log(oneCourse);
     }
   }, [oneCourse]);
 
@@ -202,7 +203,7 @@ const EditCourse = () => {
           type="number"
           name="price"
           size="small"
-          onChange={(e) => setPrice(Number(e.target.value))}
+          onChange={(e) => setPrice(e.target.value)}
         />
         <Typography>Image before</Typography>
         <img src={oneCourse?.cover} width={100} alt="" />
@@ -225,7 +226,7 @@ const EditCourse = () => {
           type="number"
           name="duration_months"
           size="small"
-          onChange={(e) => setDurationMonths(Number(e.target.value))}
+          onChange={(e) => setDurationMonths(e.target.value)}
         />
       </Box>
       <Button
