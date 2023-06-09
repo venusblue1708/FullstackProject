@@ -2,65 +2,154 @@
   background-color: black !important;
   color: white !important;
 }
-@media all and (max-width: 1024px) {
-  .regiter_box {
-    width: 40vw !important;
-  }
-}
-@media all and (max-width: 768px) {
+@media all and (max-width: 1385px) {
   .register_image {
-    display: none !important;
-  }
-  .regiter_box {
-    width: 50vw !important;
-    margin-left: 180px !important;
-  }
-  .login_button {
-    width: 38vw !important;
-  }
-  .register_button {
-    width: 38vw !important;
-  }
-  .active_box {
-    width: 55vw !important;
-    height: 35vw !important;
+    width: 600px !important;
   }
 }
-
+@media all and (max-width: 1142px) {
+  .register_image {
+    width: 550px !important;
+  }
+  .register_image > h1 {
+    font-size: 30px !important;
+  }
+  .register_image > img {
+    width: 400px;
+    height: 300px;
+  }
+  .regiter_box > h1 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 1020px) {
+  .register_image {
+    width: 450px !important;
+  }
+  .regiter_box > h1 {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 894px) {
+  .register_image {
+    width: 400px !important;
+  }
+  .register_image > h1 {
+    font-size: 25px !important;
+  }
+  .register_image > p {
+    font-size: 15px !important;
+  }
+  .regiter_box > h1 {
+    font-size: 22px;
+  }
+  .register_input {
+    width: 230px !important;
+  }
+}
+@media all and (max-width: 731px) {
+  .register_content {
+    flex-wrap: wrap-reverse;
+  }
+  .register_image {
+    width: 450px !important;
+  }
+  .register_image > h1 {
+    font-size: 30px !important;
+  }
+  .register_image > p {
+    font-size: 18px !important;
+  }
+  .register_image > img {
+    width: 400px;
+  }
+  .regiter_box {
+    width: 360px !important;
+  }
+  .db_button {
+    width: 280px !important;
+  }
+  .regiter_box > h1 {
+    font-size: 22px;
+  }
+  .register_input {
+    width: 350px !important;
+  }
+}
+@media all and (max-width: 498px) {
+  .register_image {
+    width: 380px !important;
+  }
+  .register_image > h1 {
+    font-size: 25px !important;
+  }
+  .register_image > p {
+    font-size: 16px !important;
+  }
+  .register_image > img {
+    width: 280px;
+    height: 200px;
+  }
+  .regiter_box {
+    width: 330px !important;
+  }
+  .db_button {
+    width: 250px !important;
+  }
+  .regiter_box > h1 {
+    font-size: 22px;
+  }
+  .register_input {
+    width: 350px !important;
+  }
+}
 @media all and (max-width: 425px) {
+  .register_image {
+    width: 330px !important;
+    margin-left: 30px !important;
+  }
+  .register_image > h1 {
+    font-size: 20px !important;
+  }
+  .register_image > p {
+    font-size: 14px !important;
+  }
+  .register_image > img {
+    width: 230px;
+    height: 160px;
+  }
   .regiter_box {
-    width: 70vw !important;
-    margin-left: 50px !important;
+    width: 280px !important;
   }
-  .login_button {
-    width: 53vw !important;
-    font-size: 11px !important;
+  .db_button {
+    font-size: 15px;
   }
-  .register_button {
-    width: 53vw !important;
-    font-size: 11px !important;
+  .regiter_box > h1 {
+    font-size: 22px;
   }
-  .typogra {
-    font-size: 19px !important;
-  }
-  .active_box {
-    width: 68vw !important;
-    height: 60vw !important;
-  }
-  .typa_active {
-    font-size: 13px !important;
-  }
-  .active {
-    margin-left: 70px !important;
-  }
-  .active_button {
-    width: 36vw !important;
+  .register_input {
+    width: 280px !important;
   }
 }
-
-@media all and (max-width: 375px) {
+@media all and (max-width: 355px) {
+  .register_image > h1 {
+    font-size: 18px !important;
+  }
+  .register_image {
+    width: 300px !important;
+  }
+  .register_image > img {
+    width: 200px;
+    height: 130px;
+    margin-left: 30px;
+  }
   .regiter_box {
-    width: 70vw !important;
-    margin-left: 30px !important;
+    width: 250px !important;
+  }
+  .regiter_box > h1 {
+    font-size: 20px !important;
+  }
+  .register_input {
+    width: 250px !important;
   }
 }

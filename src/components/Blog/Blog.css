@@ -85,44 +85,15 @@
 .catalog_blog_first:hover {
   animation: bounce 1s;
 }
-@media all and (max-width: 1053px) {
-  .catalog_blog_first {
-    width: 450px;
-  }
-  .catalog_blog_second {
-    width: 450px;
-  }
+@media all and (max-width: 1000px) {
   .main-statistics__title {
-    font-size: 35px;
-    width: 35%;
-  }
-}
-@media all and (max-width: 955px) {
-  .catalog_blog_first {
-    width: 420px;
-  }
-  .catalog_blog_second {
-    width: 420px;
+    font-size: 35px !important;
   }
   .catalog_title {
-    font-size: 48px;
+    font-size: 45px;
   }
-}
-@media all and (max-width: 900px) {
-  .catalog_blog_first {
-    width: 400px;
-  }
-  .catalog_blog_second {
-    width: 400px;
-  }
-  .catalog_title_first {
-    font-size: 25px;
-  }
-  .catalog_title_second {
-    font-size: 25px;
-  }
-  .catalog_btn {
-    font-size: 15px !important;
+  .catalog_blog_btn {
+    margin: 30px;
   }
 }
 @media all and (max-width: 825px) {
@@ -131,108 +102,203 @@
     flex-direction: column !important;
   }
   .main-statistics__title {
-    width: 85%;
+    text-align: center;
+    width: 400px;
+    margin-left: 0px;
   }
   .main-statistics__list {
-    width: 90%;
+    font-size: 35px !important;
+    width: 490px;
   }
-  .catalog_title {
-    font-size: 40px;
-  }
-  .catalog_blog_first {
-    width: 360px;
-  }
-  .catalog_blog_second {
-    width: 360px;
+  .list_control {
+    align-items: center;
   }
   .catalog_title_first {
-    font-size: 23px;
-    margin: 25px;
+    font-size: 25px !important;
+  }
+  .catalog_title_second {
+    font-size: 25px !important;
+  }
+  .catalog_btn {
+    font-size: 14px !important;
+  }
+}
+@media all and (max-width: 776px) {
+  .catalog_title {
+    font-size: 40px;
   }
 }
 @media all and (max-width: 721px) {
   .catalog_title {
     font-size: 35px;
   }
-  .main-statistics__title {
-    font-size: 32px;
-  }
-}
-@media all and (max-width: 666px) {
-  .catalog_title {
-    font-size: 32px;
-  }
-  .catalog_blog_first {
-    margin-left: 10px;
-    width: 320px;
-  }
-  .catalog_blog_second {
-    width: 320px;
-  }
-}
-@media all and (max-width: 628px) {
-  .catalog_title {
-    font-size: 28px;
-  }
-  .main-statistics__title {
-    font-size: 28px;
-  }
-  .main-statistics__item {
-    margin: 20px;
-  }
-}
-@media all and (max-width: 628px) {
-  .catalog_title {
-    font-size: 30px;
-    margin: 50px;
-  }
   .catalog_title_first {
-    font-size: 20px;
+    font-size: 22px !important;
   }
   .catalog_title_second {
-    font-size: 20px;
+    font-size: 22px !important;
+  }
+}
+@media all and (max-width: 662px) {
+  .catalog_title {
+    font-size: 30px !important;
+  }
+  .main-statistics__title {
+    font-size: 30px !important;
+  }
+  .item_text {
+    font-size: 14px !important;
+  }
+}
+@media all and (max-width: 606px) {
+  .catalog_title {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .main-statistics__title {
+    font-size: 25px !important;
+    width: 300px;
+  }
+  .item_text {
+    font-size: 14px !important;
+  }
+  .catalog_title_first {
+    font-size: 20px !important;
+  }
+  .catalog_title_second {
+    font-size: 20px !important;
   }
   .catalog_btn {
-    width: 50%;
-    font-size: 13px !important;
+    font-size: 11px !important;
+    height: 40px;
   }
-  .main-statistics__list {
-    flex-direction: column;
-  }
-  .main-statistics__item {
-    width: 90%;
+  .item_title {
+    font-size: 24px;
   }
 }
-@media all and (max-width: 480px) {
-  .list_control {
-    width: 110%;
+@media all and (max-width: 545px) {
+  .catalog_title {
+    font-size: 25px !important;
+    width: 350px;
   }
-  .catalog {
-    width: 120%;
-  }
-  .catalog_title_first {
-    font-size: 16px;
-  }
-  .catalog_title_second {
-    font-size: 16px;
+  .main-statistics__title {
+    font-size: 25px !important;
   }
   .catalog_blog_first {
-    height: 180px;
+    height: 150px;
   }
   .catalog_blog_second {
-    height: 180px;
+    height: 150px;
+  }
+  .catalog_title_first {
+    font-size: 18px !important;
+  }
+  .catalog_title_second {
+    font-size: 18px !important;
+  }
+  .main-statistics__list {
+    width: 400px;
   }
 }
-@media all and (max-width: 380px) {
+@media all and (max-width: 497px) {
   .catalog_title {
-    font-size: 27px;
+    font-size: 25px !important;
+    width: 300px;
+    margin-left: 90px;
+  }
+  .main-statistics__title {
+    font-size: 22px !important;
+  }
+  .catalog_title_first {
+    font-size: 16px !important;
+    margin-left: 17px;
+  }
+  .catalog_title_second {
+    font-size: 16px !important;
+    margin-left: 17px;
+  }
+  .catalog_btn {
+    font-size: 9px !important;
+    height: 30px;
+  }
+  .item_text {
+    font-size: 12px !important;
+  }
+  .item_title {
+    font-size: 20px !important;
+  }
+  .main-statistics__list {
+    margin-left: 50px;
   }
 }
-@media all and (max-width: 360px) {
-  .list_control {
-    width: 120%;
+@media all and (max-width: 490px) {
+  .main-statistics__list {
+    width: 350px;
+    padding: 0px;
   }
-  .catalog {
-    width: 143%;
+}
+@media all and (max-width: 416px) {
+  .catalog_title {
+    font-size: 20px !important;
+    margin-left: 60px;
+    width: 250px;
+  }
+  .catalog_title_first {
+    font-size: 14px !important;
+  }
+  .catalog_title_second {
+    font-size: 14px !important;
+  }
+  .catalog_btn {
+    font-size: 8px !important;
+    margin-left: 30px !important;
+  }
+}
+@media all and (max-width: 392px) {
+  .catalog_title {
+    font-size: 20px;
+    margin-left: 60px;
+  }
+  .catalog_title_first {
+    font-size: 12px !important;
+  }
+  .catalog_title_second {
+    font-size: 12px !important;
+  }
+  .catalog_blog_first {
+    height: 120px;
+    width: 165px;
+  }
+  .catalog_blog_second {
+    height: 120px;
+    width: 165px;
+  }
+  .main-statistics__list {
+    width: 300px;
+  }
+}
+@media all and (max-width: 388px) {
+  .main-statistics__title {
+    font-size: 18px !important;
+    width: 250px;
+  }
+  .item_text {
+    font-size: 10px !important;
+  }
+  .item_title {
+    font-size: 16px !important;
+  }
+  .main-statistics__list {
+    width: 250px;
+    margin-left: 20px;
+  }
+}
+@media all and (max-width: 343px) {
+  .catalog_title_first {
+    font-size: 10px !important;
+  }
+  .catalog_title_second {
+    font-size: 10px !important;
   }
 }

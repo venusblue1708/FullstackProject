@@ -158,6 +158,7 @@ const CommunitySkillbox = () => {
         </p>
       </div>
       <img
+        class="skill_end_img"
         style={{ width: "100%" }}
         src="https://thumb.tildacdn.com/tild3034-3264-4338-b065-643030343737/-/format/webp/DSCF3724_1-2.png"
         alt=""

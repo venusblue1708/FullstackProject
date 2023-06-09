@@ -169,6 +169,7 @@ function BlogStartCarousel() {
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box
+                    className="carousel_image"
                     component="img"
                     sx={{
                       height: 450,

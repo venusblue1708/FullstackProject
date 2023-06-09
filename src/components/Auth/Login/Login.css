@@ -2,47 +2,189 @@
   background-color: black !important;
   color: white !important;
 }
-@media all and (max-width: 1024px) {
-  .login_form {
-    width: 38vw !important;
-    height: 43vw !important;
-  }
+@media all and (max-width: 1360px) {
   .login_image {
-    width: 45vw !important;
+    width: 450px !important;
+  }
+  .login_image > h1 {
+    font-size: 35px !important;
   }
   .image {
     width: 500px !important;
   }
-  .register {
-    width: 28vw !important;
-    font-size: 11px !important;
+}
+@media all and (max-width: 1287px) {
+  .login_form {
+    width: 400px !important;
+    height: 450px !important;
+  }
+}
+@media all and (max-width: 1121px) {
+  .login_form {
+    width: 330px !important;
+    height: 450px !important;
+  }
+  .login_typo {
+    font-size: 25px;
+  }
+  .login_input {
+    width: 300px !important;
+  }
+  .login_image {
+    width: 400px !important;
+  }
+  .login_image > h1 {
+    font-size: 30px !important;
+  }
+  .image {
+    width: 400px !important;
+  }
+}
+@media all and (max-width: 840px) {
+  .login_form {
+    width: 270px !important;
+    height: 450px !important;
+  }
+  .login_typo {
+    font-size: 20px;
+  }
+  .login_input {
+    width: 250px !important;
+  }
+  .login_image {
+    width: 300px !important;
+  }
+  .login_image > h1 {
+    font-size: 25px !important;
+  }
+  .image {
+    width: 300px !important;
+  }
+}
+@media all and (max-width: 686px) {
+  .login_form {
+    width: 230px !important;
+    height: 380px !important;
+  }
+  .login_typo {
+    font-size: 18px;
+  }
+  .login_input {
+    width: 200px !important;
   }
   .login_button {
-    width: 28vw !important ;
-    font-size: 13px !important;
+    width: 150px !important;
+  }
+  .register {
+    width: 200px !important;
+    font-size: 10px !important;
+  }
+  .login_image {
+    width: 200px !important;
+    margin-left: 0px !important;
+  }
+  .login_image > h1 {
+    font-size: 20px !important;
+  }
+  .image {
+    width: 200px !important;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 580px) {
+  .login_content {
+    flex-wrap: wrap-reverse;
+  }
   .login_form {
-    width: 38vw !important;
-    height: 58vw !important;
-  }
-  .login_image {
-    display: none !important;
-  }
-  .image {
-    width: 500px !important;
-  }
-  .register {
-    width: 38vw !important;
-    font-size: 10px !important;
-  }
-  .login_button {
-    width: 29vw !important ;
-    font-size: 12px !important;
+    width: 400px !important;
+    height: 400px !important;
   }
   .login_typo {
+    font-size: 22px;
+  }
+  .login_input {
+    width: 350px !important;
+  }
+  .login_image {
+    width: 400px !important;
+    margin-left: 70px !important;
+  }
+  .login_image > h1 {
+    font-size: 25px !important;
+  }
+  .image {
+    width: 300px !important;
+  }
+}
+@media all and (max-width: 509px) {
+  .login_form {
+    width: 320px !important;
+  }
+  .login_input {
+    width: 300px !important;
+  }
+  .login_image {
+    width: 350px !important;
+    margin-left: 70px !important;
+  }
+  .login_image > h1 {
+    font-size: 25px !important;
+  }
+  .image {
+    width: 300px !important;
+  }
+}
+@media all and (max-width: 445px) {
+  .login_form {
+    width: 280px !important;
+  }
+  .login_input {
+    width: 250px !important;
+  }
+  .login_image {
+    width: 300px !important;
+    margin-left: 70px !important;
+  }
+  .login_image > h1 {
+    font-size: 21px !important;
+  }
+  .image {
+    width: 280px !important;
+  }
+  .login_button {
+    margin-top: 0px !important;
+  }
+  .register {
+    width: 200px !important;
+    font-size: 10px !important;
+  }
+}
+@media all and (max-width: 380px) {
+  .login_form {
+    width: 250px !important;
+    height: 370px !important;
+  }
+  .login_typo {
+    font-size: 18px;
+  }
+  .login_input {
+    width: 200px !important;
+  }
+  .login_image {
+    width: 280px !important;
+    margin-left: 30px !important;
+  }
+  .login_image > h1 {
     font-size: 20px !important;
+  }
+  .image {
+    width: 250px !important;
+  }
+  .login_button {
+    margin-top: 0px !important;
+  }
+  .register {
+    width: 200px !important;
+    font-size: 10px !important;
   }
 }

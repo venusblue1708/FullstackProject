@@ -6,6 +6,7 @@ import "./UserPage.css";
 const FooterUserPage = () => {
   return (
     <Box
+      className="user_page_footer"
       sx={{
         marginTop: "60px",
         marginLeft: "160px",
@@ -29,7 +30,7 @@ const FooterUserPage = () => {
           </Button>
         </Box>
       </Box>
-      <Box sx={{ width: "80%" }}>
+      <Box className="footer_box_control" sx={{ width: "80%" }}>
         <p className="first_para" style={{ fontSize: "13px" }}>
           Образовательные услуги оказываются ЧОУ ДПО «Образовательные технологии
           «Скилбокс (Коробка навыков)» на основании Лицензии №

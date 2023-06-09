@@ -31,6 +31,7 @@ export default function CourseCard({ item }) {
       }}
     >
       <Box
+        className="courses_card"
         sx={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -59,7 +60,12 @@ export default function CourseCard({ item }) {
                 Курсы
               </Typography>
               <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                <Typography sx={{ width: "40%" }} variant="h5" component="div">
+                <Typography
+                  className="card_typography"
+                  sx={{ width: "40%" }}
+                  variant="h5"
+                  component="div"
+                >
                   {item.title}
                 </Typography>
                 <img

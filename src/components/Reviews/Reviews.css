@@ -1,3 +1,18 @@
 .btn:hover {
   background-color: #bfff9a;
 }
+@media all and (max-width: 511px) {
+  .reviews_blog {
+    width: 400px !important;
+  }
+}
+@media all and (max-width: 422px) {
+  .reviews_blog {
+    width: 350px !important;
+  }
+}
+@media all and (max-width: 369px) {
+  .reviews_blog {
+    width: 310px !important;
+  }
+}

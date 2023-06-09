@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import { Typography } from "@mui/material";
 import PaginationList from "../PaginationList";
 import { Box } from "@mui/joy";
-
+import "../CourseCard/CourseCard.css";
 const CourseList = () => {
   const { getCourses, courses, pages } = useCourses();
   const [currentPage, setCurrentPage] = useState(1);
@@ -45,6 +45,7 @@ const CourseList = () => {
         Курсы
       </Typography>
       <Box
+        className="courses_list"
         sx={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -56,7 +57,10 @@ const CourseList = () => {
           <CourseCard key={item.id} item={item} />
         ))}
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", margin: "70px" }}>
+      <Box
+        className="pagination_control"
+        sx={{ display: "flex", justifyContent: "center", margin: "70px" }}
+      >
         <PaginationList
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}

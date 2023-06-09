@@ -1,3 +1,21 @@
 .admin_inp {
   margin-top: 15px !important;
 }
+@media all and (max-width: 813px) {
+  .admin_title {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 585px) {
+  .admin_title {
+    font-size: 22px;
+  }
+  .add_course {
+    width: 300px !important;
+  }
+}
+@media all and (max-width: 585px) {
+  .add_course {
+    width: 250px !important;
+  }
+}

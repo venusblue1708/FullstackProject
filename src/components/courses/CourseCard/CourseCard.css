@@ -11,3 +11,31 @@
 .prov {
   font-family: "Nunito", sans-serif;
 }
+@media all and (max-width: 945px) {
+  .courses_list {
+    flex-direction: column !important;
+  }
+}
+@media all and (max-width: 578px) {
+  .courses_list {
+    width: 300px !important;
+  }
+  .pagination_control {
+    margin-left: 0px !important ;
+    margin-right: 0px !important ;
+  }
+}
+@media all and (max-width: 373px) {
+  .courses_card {
+    max-width: 300px !important;
+  }
+  .card_typography {
+    font-size: 14px !important;
+  }
+  .prov {
+    font-size: 30px !important;
+  }
+  .button {
+    font-size: 12px !important;
+  }
+}

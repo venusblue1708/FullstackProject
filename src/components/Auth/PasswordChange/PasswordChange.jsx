@@ -9,7 +9,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { IconButton } from "@mui/joy";
 import { useNavigate } from "react-router-dom";
-
+import "./PasswordChange.css";
 const PasswordChange = () => {
   const { handleChangePassword } = useAuth();
   const [passwordResetCode, setPasswordResetCode] = useState();
@@ -35,8 +35,12 @@ const PasswordChange = () => {
     event.preventDefault();
   };
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      className="password_change_content"
+      sx={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Box
+        className="pch_blog"
         sx={{
           height: "30vw",
           width: "30vw",
@@ -53,6 +57,7 @@ const PasswordChange = () => {
       >
         <h2 style={{ fontFamily: "inherit" }}> Придумайте пароль</h2>
         <TextField
+          className="pch_input"
           onChange={(e) => setPasswordResetCode(e.target.value)}
           type="number"
           id="outlined-basic"
@@ -62,6 +67,7 @@ const PasswordChange = () => {
           sx={{ margin: "5px" }}
         />
         <FormControl
+          className="pch_input"
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           id="outlined-basic"
@@ -92,6 +98,7 @@ const PasswordChange = () => {
           />
         </FormControl>
         <FormControl
+          className="pch_input"
           onChange={(e) => setPasswordAgain(e.target.value)}
           type="password"
           id="outlined-basic"
@@ -123,7 +130,7 @@ const PasswordChange = () => {
         </FormControl>
 
         <Button
-          className="register_button"
+          className="pch_button"
           size="large"
           sx={{
             color: "white",
@@ -140,6 +147,7 @@ const PasswordChange = () => {
           Дальше
         </Button>
         <Button
+          className="pch_login_button"
           onClick={() => navigate("/login")}
           sx={{
             border: "2px solid grey",
@@ -154,6 +162,7 @@ const PasswordChange = () => {
         </Button>
       </Box>
       <Box
+        className="pch_image_blog"
         sx={{
           width: "40vw",
           margin: "5vh auto",

@@ -63,6 +63,7 @@ const AddCourse = () => {
 
   return (
     <Box
+      className="add_course"
       sx={{
         width: "40vw",
         margin: "5vh auto",
@@ -76,10 +77,10 @@ const AddCourse = () => {
         borderRadius: "30px",
       }}
     >
-      <h1 className="admin_title" align="center">
+      <h1 class="admin_title" align="center">
         Добавление курса
       </h1>
-      <Box sx={{ display: "flex", flexDirection: "row" }}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
         <FormControl sx={{ m: 1, minWidth: 200 }} size="small">
           <InputLabel id="demo-select-small">Выбрать категорию</InputLabel>
           <Select

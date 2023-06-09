@@ -10,3 +10,8 @@
   font-size: 16px;
   color: white;
 }
+@media all and (max-width: 578px) {
+  .grid {
+    display: none;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useAuth } from "../contexts/AuthContextProvider";
 import { Box, Button, FormLabel, TextField } from "@mui/material";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
@@ -8,8 +7,9 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { IconButton } from "@mui/joy";
-import "./Register/Register.css";
+import "./Active.css";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContextProvider";
 const Active = () => {
   const { handleActive } = useAuth();
   const [code, setCode] = useState();
@@ -31,8 +31,12 @@ const Active = () => {
     event.preventDefault();
   };
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      className="active_content"
+      sx={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Box
+        className="active_blog"
         sx={{
           height: "24vw",
           width: "30vw",
@@ -46,18 +50,16 @@ const Active = () => {
           backgroundColor: "white",
           borderRadius: "29px",
         }}
-        className="active_box"
       >
         <Box className="typa_active">
-          <h2 style={{ marginLeft: "160px" }} className="active">
-            Активизация
-          </h2>
+          <h2 style={{ marginLeft: "160px" }}>Активизация</h2>
           <p style={{ marginLeft: "20px", color: "grey" }}>
             Чтобы продолжить регистрацию, проверьте свою почту @, мы отправили
             вам код
           </p>
         </Box>
         <FormControl
+          className="active_input"
           onChange={(e) => setCode(e.target.value)}
           type="code"
           id="outlined-basic"
@@ -113,7 +115,7 @@ const Active = () => {
           flexDirection: "column",
           gap: "15px",
         }}
-        className="register_image"
+        className="active_image"
       >
         <h1>Добро пожаловать в Skillbox!</h1>
         <p style={{ fontSize: "16px" }}>
@@ -123,7 +125,7 @@ const Active = () => {
         <img
           src="https://go.skillbox.ru/assets/img/3d/auth-login.png"
           alt=""
-          width={580}
+          width={500}
         />
       </Box>
     </Box>

@@ -21,7 +21,7 @@ const CoursesPage = () => {
       {user ? (
         <Box sx={{ display: "flex", width: "100%" }}>
           <Grid sx={{ display: "flex" }}>
-            <Grid item md={3}>
+            <Grid className="grid" item md={3}>
               <SideBar />
             </Grid>
             <Grid sx={{ display: "flex" }} item md={8}></Grid>

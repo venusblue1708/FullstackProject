@@ -6,15 +6,20 @@ const CoursesPlayList = () => {
   return (
     <Box className="play" sx={{ display: "flex", marginLeft: "15%" }}>
       <Box>
-        <h1 style={{ fontSize: "53px", marginTop: "10%" }}>Плейлисты</h1>
+        <h1
+          className="play_title"
+          style={{ fontSize: "53px", marginTop: "10%" }}
+        >
+          Плейлисты
+        </h1>
         <Box sx={{ marginTop: "10%" }}>
-          <Box sx={{ display: "flex" }}>
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h1>Програмирование</h1>{" "}
             <h4 style={{ marginLeft: "50%", marginTop: "4%" }}>
               14 плейлистов
             </h4>
           </Box>
-          <Box sx={{ display: "flex", width: "1000px" }} className="python">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2 className="hh">Python</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -22,7 +27,7 @@ const CoursesPlayList = () => {
               17 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="program">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2 className="programm">Програмирование с нуля</h2>
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -30,7 +35,7 @@ const CoursesPlayList = () => {
               10 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="lesson">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Уроки "1C"</h2>
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -38,7 +43,7 @@ const CoursesPlayList = () => {
               10 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="website">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Создание сайтов</h2>
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -46,7 +51,7 @@ const CoursesPlayList = () => {
               12 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="android">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Android</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -54,7 +59,7 @@ const CoursesPlayList = () => {
               8 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="java">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Java</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -62,7 +67,7 @@ const CoursesPlayList = () => {
               8 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="ccc">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>C++</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -70,7 +75,7 @@ const CoursesPlayList = () => {
               3 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="javascript">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>JavaScript</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -78,7 +83,7 @@ const CoursesPlayList = () => {
               5 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="devops">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>DevOps</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -86,7 +91,7 @@ const CoursesPlayList = () => {
               5 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="ios">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>IOS-разработка</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -94,7 +99,7 @@ const CoursesPlayList = () => {
               6 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="sql">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>SQL</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -102,7 +107,7 @@ const CoursesPlayList = () => {
               4 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="go">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Язык Go</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -110,7 +115,7 @@ const CoursesPlayList = () => {
               4 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="linux">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Администрирование Linux</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -118,7 +123,7 @@ const CoursesPlayList = () => {
               3 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="data">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Data Science</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -128,13 +133,13 @@ const CoursesPlayList = () => {
           </Box>
         </Box>
         <Box>
-          <Box sx={{ display: "flex", marginTop: "10%" }}>
+          <Box className="play_list" sx={{ display: "flex", marginTop: "10%" }}>
             <h1>Дизайн</h1>{" "}
             <h4 style={{ marginLeft: "60%", marginTop: "3%" }}>
               13 плейлистов
             </h4>
           </Box>
-          <Box sx={{ display: "flex" }} className="webDesin">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Веб-дизайн с нуля</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -142,7 +147,7 @@ const CoursesPlayList = () => {
               9 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="photoshop">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Photoshop</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -150,7 +155,7 @@ const CoursesPlayList = () => {
               10 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="cinema">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Cinema 4D</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -158,7 +163,7 @@ const CoursesPlayList = () => {
               3 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="acvarel">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Акварельная живопись</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -166,7 +171,7 @@ const CoursesPlayList = () => {
               9 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="desinInter">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Дизайн интерьера</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -174,7 +179,7 @@ const CoursesPlayList = () => {
               19 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="sketching">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Скетчинг</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -182,7 +187,7 @@ const CoursesPlayList = () => {
               3 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="grafic">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Графический дизайн</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -190,7 +195,7 @@ const CoursesPlayList = () => {
               15 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="photo">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Фотография</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -198,7 +203,7 @@ const CoursesPlayList = () => {
               11 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="UxUi">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>UX/UI-дизайн</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -206,7 +211,7 @@ const CoursesPlayList = () => {
               14 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="adobe">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Adobe Illustrator</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -214,7 +219,7 @@ const CoursesPlayList = () => {
               6 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="croyka">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Кройка и шитье</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -222,7 +227,7 @@ const CoursesPlayList = () => {
               4 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="landscape ">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Ландшафтный дизайн</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -230,7 +235,7 @@ const CoursesPlayList = () => {
               5 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="desinCloth">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Дизайн одежды</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -240,11 +245,11 @@ const CoursesPlayList = () => {
           </Box>
         </Box>
         <Box>
-          <Box sx={{ display: "flex", marginTop: "10%" }}>
+          <Box className="play_list" sx={{ display: "flex", marginTop: "10%" }}>
             <h1>Маркетинг</h1>{" "}
             <h4 style={{ marginLeft: "60%", marginTop: "3%" }}>7 плейлистов</h4>
           </Box>
-          <Box sx={{ display: "flex" }} className="contextion">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Контекстная реклама</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -252,7 +257,7 @@ const CoursesPlayList = () => {
               5 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="smm">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>SMM</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -260,7 +265,7 @@ const CoursesPlayList = () => {
               11 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="internetMarketing">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Интернет-маркетинг с нуля</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -268,7 +273,7 @@ const CoursesPlayList = () => {
               14 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="target">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Таргетированная реклама</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -276,7 +281,7 @@ const CoursesPlayList = () => {
               13 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="torga">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Торговля на Маркетлейсах</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -284,7 +289,7 @@ const CoursesPlayList = () => {
               3 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="seo">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>SEO</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -292,7 +297,7 @@ const CoursesPlayList = () => {
               4 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="kopirayting">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Копирайтинг</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -302,11 +307,11 @@ const CoursesPlayList = () => {
           </Box>
         </Box>
         <Box>
-          <Box sx={{ display: "flex", marginTop: "10%" }}>
+          <Box className="play_list" sx={{ display: "flex", marginTop: "10%" }}>
             <h1>Управление</h1>{" "}
             <h4 style={{ marginLeft: "60%", marginTop: "3%" }}>7 плейлистов</h4>
           </Box>
-          <Box sx={{ display: "flex" }} className="softSkill">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Soft Skills</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -314,7 +319,7 @@ const CoursesPlayList = () => {
               13 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="hr">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Hr</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -322,7 +327,7 @@ const CoursesPlayList = () => {
               11 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="controlProgect">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Управление проектами</h2>{" "}
             <Button
               style={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -330,7 +335,7 @@ const CoursesPlayList = () => {
               7 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="controlSales">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Управление продажами</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -338,7 +343,7 @@ const CoursesPlayList = () => {
               12 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="menedger">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Менеджер проектов</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -346,7 +351,7 @@ const CoursesPlayList = () => {
               9 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="excel">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Excel + Google-таблицы с нуля до PRO</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -354,7 +359,7 @@ const CoursesPlayList = () => {
               8 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="investments">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Инвестиции</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -364,11 +369,11 @@ const CoursesPlayList = () => {
           </Box>
         </Box>
         <Box>
-          <Box sx={{ display: "flex", marginTop: "10%" }}>
+          <Box className="play_list" sx={{ display: "flex", marginTop: "10%" }}>
             <h1>Игры</h1>{" "}
             <h4 style={{ marginLeft: "60%", marginTop: "3%" }}>6 плейлистов</h4>
           </Box>
-          <Box sx={{ display: "flex" }} className="unreal">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Unreal Engine 4</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -376,7 +381,7 @@ const CoursesPlayList = () => {
               9 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="model">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>3D-моделирование</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -384,7 +389,7 @@ const CoursesPlayList = () => {
               26 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="grafica">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>2D- и 3D-графика</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -392,7 +397,7 @@ const CoursesPlayList = () => {
               16 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="unity">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Unity</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -400,7 +405,7 @@ const CoursesPlayList = () => {
               21 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="blender">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>Blender</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}
@@ -408,7 +413,7 @@ const CoursesPlayList = () => {
               4 Видео
             </Button>
           </Box>
-          <Box sx={{ display: "flex" }} className="linear">
+          <Box className="play_list" sx={{ display: "flex" }}>
             <h2>2D графика и линейный рисунок</h2>{" "}
             <Button
               sx={{ marginTop: "10px", marginLeft: "45%", color: "black" }}

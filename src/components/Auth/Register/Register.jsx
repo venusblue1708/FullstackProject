@@ -67,7 +67,10 @@ const Register = () => {
   };
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      className="register_content"
+      sx={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Box
         sx={{
           width: "30vw",
@@ -87,6 +90,7 @@ const Register = () => {
         {error ? <h2>{error}</h2> : null}
         <FormLabel action="submit">
           <TextField
+            className="register_input"
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             id="outlined-basic"
@@ -97,6 +101,7 @@ const Register = () => {
           />
 
           <TextField
+            className="register_input"
             onChange={(e) => setLastName(e.target.value)}
             type="text"
             id="outlined-basic"
@@ -106,6 +111,7 @@ const Register = () => {
             sx={{ margin: "5px" }}
           />
           <TextField
+            className="register_input"
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             id="outlined-basic"
@@ -115,6 +121,7 @@ const Register = () => {
             sx={{ margin: "5px" }}
           />
           <FormControl
+            className="register_input"
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             id="outlined-basic"
@@ -145,6 +152,7 @@ const Register = () => {
             />
           </FormControl>
           <FormControl
+            className="register_input"
             onChange={(e) => setPasswordConfirm(e.target.value)}
             type="password"
             id="outlined-basic"
@@ -204,7 +212,7 @@ const Register = () => {
               fontSize: "13px",
               color: "grey",
             }}
-            className="login_button"
+            className="db_button"
           >
             <img
               src={google}
@@ -220,12 +228,11 @@ const Register = () => {
           sx={{
             border: "2px solid grey",
             width: "25vw",
-
             borderRadius: "23px",
             fontSize: "13px",
             color: "grey",
           }}
-          className="login_button"
+          className="db_button"
         >
           У вас уже есть профиль ? Войдите
         </Button>
@@ -233,7 +240,6 @@ const Register = () => {
       <Box
         sx={{
           width: "38vw",
-
           margin: "5.5vh auto",
           display: "flex",
           flexDirection: "column",

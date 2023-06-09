@@ -14,6 +14,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import { Avatar } from "@mui/material";
 import Rating from "@mui/material/Rating";
+import "./Reviews.css";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

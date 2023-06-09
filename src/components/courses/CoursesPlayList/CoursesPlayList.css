@@ -1,350 +1,151 @@
-.python:hover {
-  background-color: rgb(65, 65, 248);
-  transition: 0.2s ease-out;
-
-  color: aliceblue;
-
-  /* transition: 0.8; */
-}
 h2 {
   transition: 0.2s ease-out;
 }
 h2:hover {
   margin-left: 1%;
 }
-.python {
+.play_list {
   border-top: 2px solid;
 }
-
-.program {
-  border-top: 2px solid;
-}
-
-.program:hover {
+.play_list:hover {
   background-color: rgb(65, 65, 248);
   color: aliceblue;
 }
-.lesson:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.lesson {
-  border-top: 2px solid;
-}
-.website {
-  border-top: 2px solid;
-}
-.website:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.android {
-  border-top: 2px solid;
-}
-.android:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.java:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.java {
-  border-top: 2px solid;
-}
-.ccc {
-  border-top: 2px solid;
-}
-.ccc:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.javascript:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.javascript {
-  border-top: 2px solid;
-}
-.devops {
-  border-top: 2px solid;
-}
-.devops:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.ios:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.ios {
-  border-top: 2px solid;
-}
-.sql {
-  border-top: 2px solid;
-}
-.sql:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.go:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.go {
-  border-top: 2px solid;
-}
-.linux {
-  border-top: 2px solid;
-}
-.linux:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.data:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.data {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-}
-.webDesin {
-  border-top: 2px solid;
-}
-.webDesin:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.photoshop:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.photoshop {
-  border-top: 2px solid;
-}
-.cinema {
-  border-top: 2px solid;
-}
-.cinema:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.acvarel :hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.acvarel {
-  border-top: 2px solid;
-}
-.desinInter {
-  border-top: 2px solid;
-}
-.desinInter:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.sketching {
-  border-top: 2px solid;
-}
-.sketching:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.grafic {
-  border-top: 2px solid;
-}
-.grafic:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.photo:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.photo {
-  border-top: 2px solid;
-}
-.UxUi {
-  border-top: 2px solid;
-}
-.UxUi:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.adobe:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.adobe {
-  border-top: 2px solid;
-}
-.croyka {
-  border-top: 2px solid;
-}
-.croyka:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.landscape {
-  border-top: 2px solid;
-}
-.landscape:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.desinCloth:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.desinCloth {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-}
-.contextion {
-  border-top: 2px solid;
-}
-.contextion:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.smm {
-  border-top: 2px solid;
-}
-.smm:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.internetMarketing {
-  border-top: 2px solid;
-}
-.internetMarketing:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.target:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.target {
-  border-top: 2px solid;
-}
-.torga {
-  border-top: 2px solid;
-}
-.torga:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.seo {
-  border-top: 2px solid;
-}
-.seo:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.kopirayting {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-}
-.kopirayting:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.softSkill {
-  border-top: 2px solid;
-}
-.softSkill:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.hr:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.hr {
-  border-top: 2px solid;
-}
-.controlProgect {
-  border-top: 2px solid;
-}
-.controlProgect:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.controlSales {
-  border-top: 2px solid;
-}
-.controlSales:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.menedger {
-  border-top: 2px solid;
-}
-.menedger:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.excel {
-  border-top: 2px solid;
-}
-.excel:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.investments {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-}
-.investments:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.unreal {
-  border-top: 2px solid;
-}
-.unreal:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.model {
-  border-top: 2px solid;
-}
-.model:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.grafica {
-  border-top: 2px solid;
-}
-.grafica:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.unity {
-  border-top: 2px solid;
-}
-.unity:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.blender {
-  border-top: 2px solid;
-}
-.blender:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-.linear {
-  border-top: 2px solid;
-}
-.linear:hover {
-  background-color: rgb(65, 65, 248);
-  color: aliceblue;
-}
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1198px) {
+  .play_list {
+    width: 900px;
+  }
+}
+@media all and (max-width: 1096px) {
+  .play_list {
+    width: 800px;
+  }
+}
+@media all and (max-width: 972px) {
+  .play_list {
+    width: 750px;
+  }
   .play {
-    width: 500% !important;
+    margin-left: 70px !important;
+  }
+}
+@media all and (max-width: 883px) {
+  .play_list {
+    width: 700px;
+  }
+}
+@media all and (max-width: 814px) {
+  .play_title {
+    font-size: 40px !important;
+  }
+  .play_list {
+    width: 620px;
+  }
+}
+@media all and (max-width: 725px) {
+  .play_list {
+    width: 550px;
+  }
+  .play_list > h2 {
+    font-size: 14px !important;
+  }
+  .play_list > h1 {
+    font-size: 20px !important;
+  }
+  .play_list > h4 {
+    font-size: 14px !important;
+    margin-left: 250px !important;
+  }
+  .play_list > button {
+    font-size: 14px !important;
+  }
+}
+@media all and (max-width: 658px) {
+  .play_list {
+    width: 500px;
+  }
+  .play {
+    margin-left: 50px !important;
+  }
+  .play_title {
+    font-size: 35px !important;
+    width: 300px;
+  }
+}
+@media all and (max-width: 575px) {
+  .play_title {
+    font-size: 30px !important;
+  }
+  .play_list {
+    width: 450px;
+  }
+  .play_list > h2 {
+    font-size: 16px !important;
+  }
+  .play_list > h1 {
+    font-size: 18px !important;
+  }
+  .play_list > h4 {
+    font-size: 14px !important;
+    margin-left: 150px !important;
+  }
+}
+@media all and (max-width: 525px) {
+  .play_title {
+    font-size: 25px !important;
+  }
+  .play_list {
+    width: 400px;
+  }
+  .play_list > h2 {
+    font-size: 14px !important;
+  }
+  .play_list > h1 {
+    font-size: 16px !important;
+  }
+  .play_list > h4 {
+    font-size: 12px !important;
+    margin-left: 100px !important;
+  }
+  .play_list > button {
+    font-size: 12px !important;
+    margin-left: 50px !important;
+  }
+}
+
+@media all and (max-width: 525px) {
+  .play_title {
+    font-size: 20px !important;
+  }
+  .play_list {
+    width: 350px;
+  }
+}
+@media all and (max-width: 434px) {
+  .play {
+    margin-left: 30px !important;
+  }
+  .play_list {
+    width: 320px;
+  }
+}
+@media all and (max-width: 385px) {
+  .play_list {
+    width: 300px;
+  }
+  .play_list > h4 {
+    font-size: 10px !important;
+    margin-left: 50px !important;
+  }
+  .play_list > button {
+    font-size: 10px !important;
+  }
+}
+@media all and (max-width: 351px) {
+  .play_list {
+    width: 280px;
+  }
+  .play {
+    margin-left: 20px !important;
   }
 }

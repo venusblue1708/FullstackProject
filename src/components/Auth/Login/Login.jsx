@@ -42,7 +42,10 @@ const Login = () => {
     event.preventDefault();
   };
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      className="login_content"
+      sx={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Box
         sx={{
           height: "30vw",
@@ -63,6 +66,7 @@ const Login = () => {
         {error ? <h2>{error}</h2> : null}
         <FormLabel action="submit">
           <TextField
+            className="login_input"
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             id="outlined-basic"
@@ -73,6 +77,7 @@ const Login = () => {
           />
 
           <FormControl
+            className="login_input"
             onChange={(e) => setPassword(e.target.value)}
             type="text"
             id="outlined-basic"

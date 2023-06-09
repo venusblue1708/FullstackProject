@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { Box, Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-
+import "./ForgotPassword.css";
 const ForgotPassword = () => {
   const { handlePassword } = useAuth();
   const [email, setEmail] = useState();
@@ -18,8 +18,12 @@ const ForgotPassword = () => {
     }
   };
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box
+      className="forgot_password_content"
+      sx={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Box
+        className="fp_blog"
         sx={{
           height: "30vw",
           width: "30vw",
@@ -39,6 +43,7 @@ const ForgotPassword = () => {
           Укажите, куда отправить инструкции для восстановления пароля.
         </p>
         <TextField
+          className="fp_input"
           onChange={(e) => setEmail(e.target.value)}
           type="text"
           id="outlined-basic"
@@ -52,7 +57,7 @@ const ForgotPassword = () => {
             handleSave();
             navigate("/password_reset");
           }}
-          className="login_button"
+          className="fp_button"
           sx={{
             color: "white",
             backgroundColor: "grey",
@@ -66,6 +71,7 @@ const ForgotPassword = () => {
           Отправить
         </Button>
         <Button
+          className="fp_btn_login"
           onClick={() => navigate("/login")}
           sx={{
             border: "2px solid grey",
@@ -81,6 +87,7 @@ const ForgotPassword = () => {
       </Box>
 
       <Box
+        className="forgot_password_img"
         sx={{
           width: "40vw",
           margin: "5vh auto",

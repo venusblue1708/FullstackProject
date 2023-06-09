@@ -61,7 +61,9 @@ function Navbar() {
           src="https://248006.selcdn.ru/MainSite/63210c73-957f-44d2-90d0-1a7e6838d423/c/ggzsxibz-desktop-webp.webp"
           alt="img"
         />
-        <h2 onClick={() => navigate("/sale")}>ВЕСЕННИЕ СКИДКИ ДО 50%</h2>
+        <h2 className="appbar_title" onClick={() => navigate("/sale")}>
+          ВЕСЕННИЕ СКИДКИ ДО 50%
+        </h2>
         <button onClick={() => navigate("/courses")} className="header_btn">
           Выбрать курс
         </button>
@@ -234,6 +236,7 @@ function Navbar() {
             {/* adaptive navbar  */}
 
             <Typography
+              className="navbar_text"
               variant="h6"
               noWrap
               component="a"

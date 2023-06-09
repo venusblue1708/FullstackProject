@@ -15,55 +15,164 @@
 .second_typography {
   width: 80% !important;
 }
-@media all and (max-width: 1024px) {
-  .box_carousel {
-    width: 180% !important;
-    font-size: 40px !important;
+@media all and (max-width: 1247px) {
+  .typography_title {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+
+  .box_button {
+    width: 370px !important;
+  }
+}
+@media all and (max-width: 1067px) {
+  .typography_title {
+    font-size: 45px !important;
+    line-height: 50px !important;
   }
   .box_button {
-    margin-top: 20px !important;
-    margin-left: -35px !important;
-  }
-  .typography_title {
-    font-size: 40px !important ;
-  }
-  .second_typography {
-    font-size: 14px !important;
-    width: 70% !important;
+    width: 370px !important;
   }
 }
-@media all and (max-width: 768px) {
-  .all_carousel {
-    width: 100% !important;
-    height: 80% !important;
-    margin-left: 70px !important;
-  }
-  .second_carousel {
-    width: 40% !important ;
+@media all and (max-width: 1018px) {
+  .typography_title {
+    font-size: 45px !important;
+    line-height: 50px !important;
   }
   .box_carousel {
-    width: 50% !important;
+    height: 400px !important;
   }
-  .typography_title {
-    font-size: 44px !important;
+  .carousel_image {
+    height: 390px !important;
+  }
+  .box_button {
+    width: 300px !important;
   }
 }
-@media all and (max-width: 425px) {
-  .second_carousel {
+
+@media all and (max-width: 887px) {
+  .typography_title {
+    font-size: 40px !important;
+    line-height: 44px !important;
+  }
+  .box_button {
+    width: 270px !important;
+  }
+  .button_filter {
+    margin-top: 0px !important;
+  }
+  .box_carousel {
+    height: 390px !important;
+  }
+  .carousel_image {
+    height: 370px !important;
+  }
+}
+@media all and (max-width: 850px) {
+  .typography_title {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+  .box_button {
     display: none !important;
   }
-  .all_carousel {
-    width: 110% !important;
+}
+@media all and (max-width: 754px) {
+  .box_carousel {
+    height: 330px !important;
+    width: 300px !important;
+  }
+  .carousel_image {
+    height: 320px !important;
   }
   .typography_title {
-    font-size: 40px !important;
-  }
-  .box_button {
-    width: 90% !important;
+    font-size: 30px !important;
+    line-height: 33px !important;
+    margin: 25px !important;
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 635px) {
+  .box_carousel {
+    height: 290px !important;
+    width: 300px !important;
+  }
+  .carousel_image {
+    height: 280px !important;
+  }
+  .typography_title {
+    font-size: 30px !important;
+    line-height: 33px !important;
+    margin: 25px !important;
+  }
+  .second_typography {
+    font-size: 12px !important;
+  }
+}
+@media all and (max-width: 558px) {
+  .box_carousel {
+    height: 260px !important;
+  }
+  .carousel_image {
+    height: 250px !important;
+  }
+  .typography_title {
+    font-size: 25px !important;
+    line-height: 28px !important;
+  }
+}
+@media all and (max-width: 522px) {
+  .box_carousel {
+    height: 230px !important;
+  }
+  .carousel_image {
+    height: 220px !important;
+  }
+  .second_typography {
+    font-size: 10px !important;
+  }
   .all_carousel {
-    width: 120% !important;
+    margin-left: 40px !important;
+  }
+}
+@media all and (max-width: 507px) {
+  .box_carousel {
+    height: 210px !important;
+  }
+  .carousel_image {
+    height: 200px !important;
+  }
+  .second_typography {
+    font-size: 10px !important;
+  }
+  .all_carousel {
+    margin-left: 20px !important;
+  }
+}
+@media all and (max-width: 474px) {
+  .box_carousel {
+    height: 190px !important;
+  }
+  .carousel_image {
+    height: 180px !important;
+  }
+  .second_typography {
+    font-size: 8px !important;
+  }
+  .typography_title {
+    font-size: 22px !important;
+    line-height: 25px !important;
+  }
+}
+@media all and (max-width: 377px) {
+  .box_carousel {
+    height: 160px !important;
+  }
+  .carousel_image {
+    height: 150px !important;
+  }
+
+  .typography_title {
+    font-size: 20px !important;
+    line-height: 22px !important;
   }
 }

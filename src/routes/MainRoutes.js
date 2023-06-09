@@ -7,7 +7,6 @@ import CommunitySkillbox from "../components/pages/CommunitySkillboxPage/Communi
 import UserPage from "../components/pages/UserPage/UserPage";
 import Login from "../components/Auth/Login/Login";
 import Register from "../components/Auth/Register/Register";
-import Active from "../components/Auth/Active";
 import ForgotPassword from "../components/Auth/ForgotPassword/ForgotPassword";
 import PasswordChange from "../components/Auth/PasswordChange/PasswordChange";
 import CoursesPlayList from "../components/courses/CoursesPlayList/CoursesPlayList";
@@ -18,6 +17,7 @@ import EditCourse from "../components/courses/EditCourse/EditCourse";
 import AddReview from "../components/AddReview/AddReview";
 import Reviews from "../components/Reviews/Reviews";
 import Ordering from "../components/Ordering/Ordering";
+import Active from "../components/Auth/Active/Active";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
